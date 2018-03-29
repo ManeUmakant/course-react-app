@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/newCss.css' %}" type="text/css" rel="stylesheet">
+
+    <script src="{% static 'js/new.js' %}" type="text/javascript"></script>
+
+    <style>
+        .demo2{
+
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+
+<button onclick="testFunc()">Click Me</button>
+
+<h2 class="demo">External css</h2>
+<h3 class="demo2">internal css</h3>
+<h4 style="color:purple;">Inline css</h4>
+
+
+<video width="400" controls>
+  <source src="{% static 'videos/videoplayback.mp4' %}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<video width="400" controls>
+  <source src="{% static 'videos/Dekha tujhe to ho gayi deewani Jhankar HD   Koyla 1997.mp4' %}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!--<img src="{% static 'images/net.png' %}" height="300" width="300">-->
+
+
+</body>
+</html>
+
+
+
+<!--
+<link rel="stylesheet" type="text/css" href="{% static 'css/test2.css' %}">
+    <script src="{% static 'js/test.js' %}" type="text/javascript"></script>
+-->
